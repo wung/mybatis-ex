@@ -23,7 +23,7 @@ import com.penglecode.mybatis.ex.AbstractExSqlSession;
  *	    <property name="dataSource" ref="dataSource"/>
  * </bean>
  * 
- * <bean id="defaultSqlSessionTemplate" class="com.penglecode.mybatis.ex.spring.DelegateSqlSessionTemplate">
+ * <bean id="defaultSqlSessionTemplate" class="com.penglecode.mybatis.ex.spring.ExSqlSessionTemplate">
  *		<constructor-arg index="0" ref="sqlSessionFactory"/>
  *		<constructor-arg index="1" ref="SIMPLE"/>
  *	</bean>
