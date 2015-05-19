@@ -54,7 +54,7 @@ public abstract class AbstractExSqlSession implements ExSqlSession {
 		return BatchResultUtils.toPrimitive(batchResultList);
 	}
 
-	public <T> int[] batchDelete(String statementKey, List<T> paramObjList) {
+	public <T> int[] batchUpdate(String statementKey, List<T> paramObjList) {
 		return batchUpdate(statementKey, paramObjList, DEFAULT_FLUSH_BATCH_SIZE);
 	}
 
@@ -86,7 +86,7 @@ public abstract class AbstractExSqlSession implements ExSqlSession {
 		return BatchResultUtils.toPrimitive(batchResultList);
 	}
 
-	public <T> int[] batchUpdate(String statementKey, List<T> paramObjList) {
+	public <T> int[] batchDelete(String statementKey, List<T> paramObjList) {
 		return batchDelete(statementKey, paramObjList, DEFAULT_FLUSH_BATCH_SIZE);
 	}
 
