@@ -5,8 +5,8 @@ apply plugin: 'signing' //使用signing plugin做数字签名
 
 group = 'com.github.penggle'
 version = '1.0.0'
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
 
 ext.versions = [
 	mybatis: '3.2.7',
@@ -26,7 +26,7 @@ ext.versions = [
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'mybatis-ex', 'Implementation-Version': version
+        attributes 'Implementation-Title': 'mybatis-ex', 'Implementation-Version': version, 'X-Compile-Target-JDK': sourceCompatibility
     }
 }
 
